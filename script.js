@@ -2,8 +2,8 @@
 const students = [
   {
     number: 1,
-    name: "Ana Silva",
-    course: "Desenvolvimento Web",
+    name: "Adriel Vinicius da Luz Tomaz",
+    course: "Desenvolvimento de Sistemas",
     photo: "/placeholder.svg?height=300&width=250",
   },
   {
