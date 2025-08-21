@@ -4,7 +4,7 @@ const students = [
     number: 1,
     name: "Adriel Vinicius da Luz Tomaz",
     course: "Desenvolvimento de Sistemas",
-    photo: "/Img/Adriel.jpg",
+    photo: "Img/Adriel.jpg",
   },
   {
     number: 2,
