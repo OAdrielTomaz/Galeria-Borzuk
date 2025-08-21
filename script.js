@@ -146,7 +146,7 @@ const students = [
   },
    {
     number: 25,
-    name: "Victor Queiroz de Brito Nascimento",
+    name: "Vitor Queiroz de Brito Nascimento",
     course: "Desenvolvimento de Sistemas",
     photo: "/Img/Queiroz.jpg",
   },
