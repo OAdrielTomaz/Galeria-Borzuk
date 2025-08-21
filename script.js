@@ -34,7 +34,7 @@ const students = [
     number: 6,
     name: "Felipe Nader De Macedo Neves",
     course: "Desenvolvimento de Sistemas",
-    photo: "/placeholder.svg?height=300&width=250",
+    photo: "/Img/SemFoto.png",
   },
   {
     number: 7,
@@ -46,7 +46,7 @@ const students = [
     number: 8,
     name: "Guilherme Dos Reis Soares dos Santos",
     course: "Desenvolvimento de Sistemas",
-    photo: "/Img/",
+    photo: "/Img/SemFoto.png",
   },
   {
     number: 9,
@@ -64,13 +64,13 @@ const students = [
     number: 11,
     name: "Janaine Nunes da Silva",
     course: "Desenvolvimento de Sistemas",
-    photo: "/Img/",
+    photo: "/Img/SemFoto.png",
   },
    {
     number: 12,
     name: "João Gabriel Carmo de Bonfim",
     course: "Desenvolvimento de Sistemas",
-    photo: "/Img/",
+    photo: "/Img/SemFoto.png",
   },
    {
     number: 13,
@@ -100,7 +100,7 @@ const students = [
     number: 17,
     name: "Maria Gabriela Aquino Pinheiro",
     course: "Desenvolvimento de Sistemas",
-    photo: "/Img/",
+    photo: "/Img/SemFoto.png",
   },
    {
     number: 18,
@@ -118,7 +118,7 @@ const students = [
     number: 20,
     name: "Pedro Eduardo Doarte",
     course: "Desenvolvimento de Sistemas",
-    photo: "/Img/",
+    photo: "/Img/SemFoto.png",
   },
    {
     number: 21,
@@ -136,7 +136,7 @@ const students = [
     number: 23,
     name: "Samantha Christakis Garcia Colucci",
     course: "Desenvolvimento de Sistemas",
-    photo: "/Img/Samantha",
+    photo: "/Img/Samantha.jpg",
   },
    {
     number: 24,
