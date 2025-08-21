@@ -140,13 +140,13 @@ const students = [
   },
    {
     number: 24,
-    name: "Victor Queiroz de Brito Nascimento",
+    name: "Victor Gabriel de Sousa",
     course: "Desenvolvimento de Sistemas",
     photo: "/placeholder.svg?height=300&width=250",
   },
    {
     number: 25,
-    name: "",
+    name: "Victor Queiroz de Brito Nascimento",
     course: "Desenvolvimento de Sistemas",
     photo: "/placeholder.svg?height=300&width=250",
   },
