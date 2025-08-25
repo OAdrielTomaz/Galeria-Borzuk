@@ -1,10 +1,10 @@
 // Array com os dados dos alunos ordenados por número de chamada
 const students = [
   {
-    number: 1,
-    name: "Adriel Vinicius da Luz Tomaz",
-    course: "Desenvolvimento de Sistemas",
-    photo: "Img/Adriel.jpg",
+    number: 1, // Número de chamada do aluno
+    name: "Adriel Vinicius da Luz Tomaz", // Nome do aluno
+    course: "Desenvolvimento de Sistemas", // Curso do aluno
+    photo: "Img/Adriel.jpg", // Caminho da foto do aluno
   },
   {
     number: 2,
@@ -34,7 +34,7 @@ const students = [
     number: 6,
     name: "Felipe Nader De Macedo Neves",
     course: "Desenvolvimento de Sistemas",
-    photo: "Img/SemFoto.png",
+    photo: "Img/SemFoto.png", // Foto do aluno indisponível
   },
   {
     number: 7,
@@ -46,7 +46,7 @@ const students = [
     number: 8,
     name: "Guilherme Dos Reis Soares dos Santos",
     course: "Desenvolvimento de Sistemas",
-    photo: "Img/SemFoto.png",
+    photo: "Img/SemFoto.png", // Foto do aluno indisponível
   },
   {
     number: 9,
@@ -60,91 +60,91 @@ const students = [
     course: "Desenvolvimento de Sistemas",
     photo: "Img/Jackson.jpg",
   },
-   {
+  {
     number: 11,
     name: "Janaine Nunes da Silva",
     course: "Desenvolvimento de Sistemas",
-    photo: "Img/SemFoto.png",
+    photo: "Img/SemFoto.png", // Foto do aluno indisponível
   },
-   {
+  {
     number: 12,
     name: "João Gabriel Carmo de Bonfim",
     course: "Desenvolvimento de Sistemas",
-    photo: "Img/SemFoto.png",
+    photo: "Img/SemFoto.png", // Foto do aluno indisponível
   },
-   {
+  {
     number: 13,
     name: "João Gabriel José Martins de Oliveira",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/João josé.jpg",
   },
-   {
+  {
     number: 14,
     name: "Leonardo Antonio Prado Trindade",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/Leo.jpg",
   },
-   {
+  {
     number: 15,
     name: "Lucas Calciolari Consolaro dos Santos",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/Lucas.jpg",
   },
-   {
+  {
     number: 16,
     name: "Maria Eduarda Borzuk da Fonseca Urbanski",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/Borzuk.jpg",
   },
-   {
+  {
     number: 17,
     name: "Maria Gabriela Aquino Pinheiro",
     course: "Desenvolvimento de Sistemas",
-    photo: "Img/SemFoto.png",
+    photo: "Img/SemFoto.png", // Foto do aluno indisponível
   },
-   {
+  {
     number: 18,
     name: "Mateus Henrique de Carvalho",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/Mateus.jpg",
   },
-   {
+  {
     number: 19,
     name: "Matheus dos Santos Lopes",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/Matheus Lopes.jpg",
   },
-   {
+  {
     number: 20,
     name: "Pedro Eduardo Doarte",
     course: "Desenvolvimento de Sistemas",
-    photo: "Img/SemFoto.png",
+    photo: "Img/SemFoto.png", // Foto do aluno indisponível
   },
-   {
+  {
     number: 21,
     name: "Renan Stefani Lira",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/Renan.jpg",
   },
-   {
+  {
     number: 22,
     name: "Sabrina de Oliveira Alves",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/Sabrina.jpg",
   },
-   {
+  {
     number: 23,
     name: "Samantha Christakis Garcia Colucci",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/Samantha.jpg",
   },
-   {
+  {
     number: 24,
     name: "Victor Gabriel de Sousa",
     course: "Desenvolvimento de Sistemas",
     photo: "Img/VItor Gabriel.jpg",
   },
-   {
+  {
     number: 25,
     name: "Vitor Queiroz de Brito Nascimento",
     course: "Desenvolvimento de Sistemas",
@@ -155,20 +155,20 @@ const students = [
 // Função para criar o HTML de um card de aluno
 function createStudentCard(student) {
   return `
-        <div class="student-card" onclick="togglePhotoSize(${student.number})">
+        <div class="student-card" onclick="togglePhotoSize(${student.number})"> <!-- Cria o card com clique para alternar o tamanho da foto -->
             <div class="image-container">
                 <img 
-                    src="${student.photo}" 
-                    alt="Foto de ${student.name}" 
-                    class="student-photo" 
-                    id="photo-${student.number}"
+                    src="${student.photo}" <!-- Foto do aluno -->
+                    alt="Foto de ${student.name}" <!-- Descrição da foto -->
+                    class="student-photo" <!-- Estilo da foto -->
+                    id="photo-${student.number}" <!-- ID único da foto -->
                 >
-                <div class="click-indicator">Clique para redimensionar</div>
+                <div class="click-indicator">Clique para redimensionar</div> <!-- Indicação de interação -->
             </div>
             <div class="student-info">
-                <div class="student-number">${student.number}</div>
-                <div class="student-name">${student.name}</div>
-                <div class="student-course">${student.course}</div>
+                <div class="student-number">${student.number}</div> <!-- Exibe o número de chamada -->
+                <div class="student-name">${student.name}</div> <!-- Exibe o nome do aluno -->
+                <div class="student-course">${student.course}</div> <!-- Exibe o curso do aluno -->
             </div>
         </div>
     `
@@ -212,7 +212,7 @@ function addStudent(name, course, photoUrl) {
     number: nextNumber,
     name: name,
     course: course,
-    photo: photoUrl || `/placeholder.svg?height=300&width=250&query=student+portrait+${name}`,
+    photo: photoUrl || `/placeholder.svg?height=300&width=250&query=student+portrait+${name}`, // Foto padrão caso não fornecida
   }
 
   // Adiciona ao array de alunos
